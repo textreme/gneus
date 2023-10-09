@@ -1,0 +1,199 @@
+@media (min-width: 640px) { 
+  border-radius: 0.5rem; 
+}
+
+.container {
+  border: 1px solid green;
+}
+
+.inner {
+  padding-left: 1rem;
+  padding-right: 1rem; 
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem; 
+    border: 1px solid red;
+}
+
+.lesson {
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio */
+  position: relative;
+  height: 0;
+  border: 1px solid blue;
+}
+
+.lesson iframe {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
+.card {
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06); 
+  display: flex; 
+  flex-direction: row;
+  border: 1px solid;
+  overflow: hidden;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio */
+  position: relative;
+  border: 1px solid yellow;
+}
+
+.text {
+  margin-top: 0.5rem; 
+  max-width: 36rem; 
+  font-size: 0.875rem;
+  line-height: 1.25rem; 
+}
+
+.exhibit {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    padding: 20px;
+    overflow-y: auto;
+    border: 1px solid red;
+    font-size: 0.875rem;
+    line-height: 1.25rem; 
+}
+
+.quiz {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid purple;
+}
+
+.buttonContainer {
+    display: flex;
+    justify-content: flex-end;
+    border: 1px solid red;
+}
+
+.button {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 2px 6px;@media (min-width: 640px)
+  border-radius: 0.5rem; 
+}
+
+.button:hover {
+  background-color: #4F46E5; /* Gray-200 */
+}
+
+
+.choicesfieldset {
+}
+
+.choiceslegend {
+      font-size: 0.5rem;
+  line-height: 1.25rem; 
+  font-weight: bold;
+  padding: 0.5em;
+  border: none;
+}
+
+.choicelabel {
+  font-size: 0.875rem;
+  line-height: 1.25rem; 
+  display: block;
+  cursor: pointer;
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  border: 1px solid transparent;
+  border-radius: 0.375rem;
+}
+
+.choicedefault {
+  border: 1px solid; 
+  transition: background-color 0.2s ease-in-out;
+}
+
+.choicedefault:hover {
+  background-color: transparent;
+}
+
+.choiceselected {
+  border: 2px solid; 
+  border-color: #4F46E5;
+  background-color: transparent;
+  color: white;
+}
+
+.choiceinput {
+  display: none;
+}
+
+.questionmapq,
+.questionmapc {
+    display: inline-flex;
+    position: relative;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    align-items: center;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    font-weight: 600;
+    background-color: transparent;
+    transition: border 0.3s ease;
+    border: 1px solid; /* Initial state without border */
+}
+
+/* On hover, show the border */
+.questionmapq:hover,
+.questionmapc:hover {
+    border: 2px solid #4F46E5;
+}
+
+/* Active state (question is selected), maintain the border */
+.questionmapq {
+    z-index: 10;
+    border: 2px solid #4F46E5;
+}
+
+.questionmapc {
+    box-shadow: var(--tw-ring-inset) 0 0 0 calc(1px + var(--tw-ring-offset-width)) var(--tw-ring-color);
+    --tw-ring-inset: inset;
+    --ring-color: #00FFFFFF;
+}
+
+.progressBarContainer {
+    width: 100%;
+    height: 12px; /* adjust as needed */
+    background-color: #e0e0e0; /* light gray */
+    border-radius: 10px; /* rounded corners */
+    overflow: hidden; /* ensures inner div doesn't spill out */
+}
+
+.progressBarFill {
+    height: 100%;
+    background-color: #4F46E5; /* green color for correct progress */
+    transition: width 0.4s ease-in-out; /* smooth transition */
+}
+
+.progress {
+    margin-top: auto;
+}
+
+.correctSymbol,
+.incorrectSymbol {
+  margin-left: auto;
+  color: green; /* Color for the correct symbol */
+}
+
+.incorrectSymbol {
+  color: red; /* Color for the incorrect symbol */
+}

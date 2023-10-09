@@ -1,0 +1,15 @@
+/* @tailwind base;
+@tailwind components;
+@tailwind utilities; */
+
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+@import '~katex/dist/katex.min.css';
+
+.test {
+  border: 1px solid #fff;
+  border-radius: 5px;
+  padding: 2px 6px;
+  margin: 12px 0 0;
+}

@@ -1,15 +1,23 @@
 {
-  "index": "Introduction",
-  "another": "Another Page",
-  "advanced": "Advanced (A Folder)",
-  "about": {
-    "title": "About",
-    "type": "page"
-  },
-  "contact": {
-    "title": "Contact ↗",
+  "sat": "SAT",
+  "index": {
+    "title": "Home",
     "type": "page",
-    "href": "https://twitter.com/shuding_",
-    "newWindow": true
+    "display": "hidden"
+  },
+"tests": {
+    "title": "Standardized Tests",
+    "type": "menu",
+    "items": {
+      "act": {
+        "title": "ACT",
+        "href": "/act"
+      },
+      "sat": {
+        "title": "SAT",
+        "href": "/sat"
+      }
+    }
   }
 }
+
